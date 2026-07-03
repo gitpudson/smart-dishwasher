@@ -4,13 +4,14 @@ import { Link } from 'react-router-dom'
 import { StoreContext } from '../../Context/StoreContext';
 
 const Navbar = () => {
-    const { isLoading, customerGroup,setSelectCustomer } = useContext(StoreContext);
+    const { isLoadingNavbar,isLoadingSideBar, navbarMenu,setSelectNavbar,customer,setSelectSideBar,setSelectMachine } = useContext(StoreContext);
      const [menu, setMenu] = useState("");
 
     const menuClick = (item) => {
         setMenu(item.customer_group);
-        setSelectCustomer(item.customer_group);
-        // setSelectCustomer("");
+        setSelectNavbar(item.customer_group);
+        setSelectSideBar("");
+        setSelectMachine("");
     }
 
 
@@ -18,30 +19,22 @@ const Navbar = () => {
         <>
 
             <div className="title">
-                {/* <Link to="/smart-dishwasher" >Smart Dishwasher</Link> */}
                 Smart Dishwasher
             </div>
 
-            {(isLoading) && <center> <div><img className='loading' src="./spinner.svg" alt="" /></div> </center>}
+            {(isLoadingNavbar || customer.length === 0) && <center> <div><img className='loading' src="./spinner.svg" alt="" /></div> </center>}
+            {/* {(isLoadingNavbar || customer.length === 0) && <center> <div><img className='loading' src="./smart-dishwasher/spinner.svg" alt="" /></div> </center>} */}
 
 
             <div className="navbar">
                  
-                 {(!isLoading) &&<hr />}
-                {(customerGroup.length !== 0) &&
+                 {(!isLoadingNavbar) &&<hr />}
+                {(navbarMenu.length !== 0) &&
                     
                     <div className="navbar-menu">
                         {
-                            customerGroup.map((item, index) => {
-                                // var param = "/smart-dishwasher/";
-                                // var customer_group = item.customer_group;
+                            navbarMenu.map((item, index) => {
                                 return (
-                                    // <div key={index} onClick={() => menuClick(item)}>
-                                    //     <Link to={param} onClick={()=>setMenuCustomer(customer_group)} className={menu === item.customer_group ? "active" : ""}>
-                                    //        { item.customer_group}
-                                    //     </Link>
-                                    // </div>
-
                                     <div key={index} onClick={() => menuClick(item)} className={menu === item.customer_group ? "active" : ""}>
                                         { item.customer_group}
                                     </div>

@@ -1,0 +1,39 @@
+.device{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 200px;
+    /* border: 1px solid tomato; */
+    font-size: 50px;
+    color: #49557e;
+}
+
+.switch{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    margin-bottom: 50px;
+}
+.relay{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.switch button{
+    display: flex;
+    flex-direction: row;
+    /* background: transparent; */
+    font-size: 30px;
+    color: #49557e;
+    border: 1px solid tomato;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    gap: 10px;
+}
+.icon-light{
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+}
