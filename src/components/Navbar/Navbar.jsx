@@ -4,11 +4,12 @@ import { Link } from 'react-router-dom'
 import { StoreContext } from '../../Context/StoreContext';
 
 const Navbar = () => {
-    const { isLoading, customerGroup } = useContext(StoreContext);
+    const { isLoading, customerGroup,setSelectCustomer } = useContext(StoreContext);
      const [menu, setMenu] = useState("");
 
     const menuClick = (item) => {
         setMenu(item.customer_group);
+        setSelectCustomer(item.customer_group);
         // setSelectCustomer("");
     }
 
@@ -21,7 +22,7 @@ const Navbar = () => {
                 Smart Dishwasher
             </div>
 
-            {(isLoading) && <center> <div><img className='loading' src="./spinner.svg" alt="" /></div> </center>}
+            {(isLoading) && <center> <div><img className='loading' src="./smart-dishwasher/spinner.svg" alt="" /></div> </center>}
 
 
             <div className="navbar">

@@ -4,7 +4,7 @@ import { StoreContext } from './Context/StoreContext';
 import Home from './pages/Home/Home'
 
 const App = () => {
-   const { customerGroup } = useContext(StoreContext);
+   const { selectCustomer } = useContext(StoreContext);
 
 
   return (
@@ -12,7 +12,7 @@ const App = () => {
       <Navbar/>
 
       {
-        customerGroup !== "" ? <Home /> : <></>
+        selectCustomer !== "" ? <Home /> : <></>
       }
 
 
