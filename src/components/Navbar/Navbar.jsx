@@ -22,7 +22,7 @@ const Navbar = () => {
                 Smart Dishwasher
             </div>
 
-            {(isLoading) && <center> <div><img className='loading' src="./smart-dishwasher/spinner.svg" alt="" /></div> </center>}
+            {(isLoading) && <center> <div><img className='loading' src="./spinner.svg" alt="" /></div> </center>}
 
 
             <div className="navbar">
