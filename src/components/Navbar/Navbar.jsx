@@ -32,8 +32,8 @@ const Navbar = () => {
                     <div className="navbar-menu">
                         {
                             customerGroup.map((item, index) => {
-                                var param = "/smart-dishwasher/";
-                                var customer_group = item.customer_group;
+                                // var param = "/smart-dishwasher/";
+                                // var customer_group = item.customer_group;
                                 return (
                                     // <div key={index} onClick={() => menuClick(item)}>
                                     //     <Link to={param} onClick={()=>setMenuCustomer(customer_group)} className={menu === item.customer_group ? "active" : ""}>
