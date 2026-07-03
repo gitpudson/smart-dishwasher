@@ -4,7 +4,7 @@
     height: 100%;
     min-height: 100vh;
     flex-direction: row;
-    gap: 20px;
+    gap: 30px;
     /* background-color: DodgerBlue; */
     /* border: 1px solid #1a0af7; */
 }
@@ -22,7 +22,7 @@
 
 .menu-content {
     padding: 10px;
-    flex: 80%;
+    flex: 30%;
     flex-direction: column;
     text-align: center;
 
