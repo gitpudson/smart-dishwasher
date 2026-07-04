@@ -22,10 +22,7 @@
 
 .menu-content {
     padding: 10px;
-    flex: 30%;
+    flex: 75%;
     flex-direction: column;
-    text-align: center;
-
-    /* border: 1px solid #1a0af7;
-    border-radius: 20px;
-} */
+    text-align: center;    
+} 
