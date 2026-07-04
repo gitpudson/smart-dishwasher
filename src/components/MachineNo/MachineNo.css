@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: row;
     gap: 80px;
-    font-size: 20px;
-    color: #0a3ad8;
+    /* font-size: 20px;
+    color: #0a3ad8; */
     margin-bottom: 100px;
     cursor: pointer;
     /* border: 2px solid violet;
@@ -15,4 +15,25 @@
 .machineNo-item-name{
     padding-left: 30px;
     padding-right: 30px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.machine-no-item{
+    font-size: 20px;
+    font-weight: 800;
+    color: gray;
+    border: 2px solid violet;
+    border-radius: 0px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.machine-no-item:hover{
+    background-color: #f3bdb3;
+}
+ .machine-no-item .active{
+    font-size: 25px;
+    color: tomato;
+    /* padding-bottom: 2px; */
+    /* background-color: blue; */
 }
