@@ -14,6 +14,9 @@
     border-radius: 20px;
     padding: 10px;
 }
+.sidebar-item:hover{
+    background-color: #f3bdb3;
+}
 .icon-side-bar{
     color: tomato;
     width: 30px;

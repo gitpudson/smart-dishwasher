@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: row;
     /* background: transparent; */
-    font-size: 30px;
+    font-size: 25px;
     color: #49557e;
     border: 1px solid tomato;
     padding: 10px 30px;
@@ -31,6 +31,9 @@
     cursor: pointer;
     transition: 0.3s;
     gap: 10px;
+}
+.switch button:hover{
+    background-color: #f3bdb3;
 }
 .icon-light{
     width: 60px;
